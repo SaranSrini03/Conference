@@ -28,7 +28,7 @@ const About = () => {
           }
         `}</style>
 
-        <div className="relative flex flex-col items-start text-justify text-sm sm:text-base md:text-lg lg:text-xl w-full max-w-md px-4 h-auto p-6 rounded-lg text-white font-mono bg-black border border-white shadow-lg animate-blink">
+        <div className="relative flex flex-col items-start text-justify text-sm sm:text-base md:text-lg lg:text-xl w-full max-w-md p-6 rounded-lg text-white font-mono bg-black border border-white shadow-lg animate-blink">
           <div className="absolute top-2 left-2 w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 transition-transform transform hover:scale-105">
             <Image 
               src={Arrow} 
