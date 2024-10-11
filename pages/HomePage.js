@@ -2,7 +2,8 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-
+import Nav from "./Nav";
+import { div } from "@tensorflow/tfjs";
 const HomePage = () => {
   const router = useRouter();
 
@@ -12,6 +13,7 @@ const HomePage = () => {
 
   return (
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden bg-gray-200 px-4">
+      <section id="homepage">
       <div className="relative z-10 text-center w-full max-w-screen-lg mx-auto">
         {/* Full-width main title */}
         <h1 className="text-black mb-2 text-4xl sm:text-6xl font-bold w-full">
@@ -48,6 +50,7 @@ const HomePage = () => {
           </button>
         </div>
       </div>
+      </section>
     </div>
   );
 };

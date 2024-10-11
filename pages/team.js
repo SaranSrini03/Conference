@@ -47,10 +47,12 @@ const Team = () => {
 
   return (
     <div
+
       ref={teamRef}
       className={`flex flex-col items-center justify-center min-h-screen text-center transition-opacity duration-300`}
       style={{ opacity }}
     >
+      <section id="team">
       <h1 className="m-10 text-3xl font-bold text-blue-600">Head Of The Department - CSE</h1>
       <div className="flex flex-wrap justify-center space-x-4 md:space-x-8">
         {facultyDetails.map((faculty, index) => (
@@ -118,6 +120,7 @@ const Team = () => {
           </div>
         ))}
       </div>
+      </section>
     </div>
   );
 }

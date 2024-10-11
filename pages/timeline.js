@@ -52,6 +52,7 @@ const Timeline = () => {
 
   return (
     <div className="bg-black">
+      <section id="timeline">
       {/* <Nav /> */}
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 relative px-4"> {/* Added padding */}
         <h1 className="text-blue-600 text-6xl m-10 font-mono font-bold text-center">Timeline</h1>
@@ -84,6 +85,7 @@ const Timeline = () => {
           />
         </div>
       </div>
+      </section>
     </div>
   );
 };
