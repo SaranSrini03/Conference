@@ -29,7 +29,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-black font-mono p-4">
+    <nav className="bg-gray-200 font-mono p-4">
       <div className="container flex flex-c justify-between items-center">
         <div className="flex items-center space-x-0">
           <Image
@@ -37,7 +37,7 @@ const Nav = () => {
             alt="Logo"
             width={50}
             height={60}
-            className="mr-3 bg-black p-1"
+            className="mr-3 bg-gray-200 p-1"
           />
           
           <Image

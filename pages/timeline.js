@@ -53,14 +53,14 @@ const Timeline = () => {
   return (
     <div className="bg-black">
       {/* <Nav /> */}
-      <div className="flex flex-col items-center justify-center min-h-screen bg-black relative px-4"> {/* Added padding */}
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-200 relative px-4"> {/* Added padding */}
         <h1 className="text-blue-600 text-6xl m-10 font-mono font-bold text-center">Timeline</h1>
         {timelineData.map((item, index) => (
           <div
             key={index}
             ref={el => itemsRef.current[index] = el}
             data-index={index}
-            className={`bg-blue-600 bg-opacity-30 backdrop-blur-md p-4 m-4 rounded-lg w-full max-w-2xl text-white flex flex-col items-center justify-center border border-white/30 transition-all duration-300 ease-in-out transform cursor-pointer ${
+            className={`bg-blue-600 bg-opacity-100 backdrop-blur-md p-4 m-4 rounded-lg w-full max-w-2xl text-white flex flex-col items-center justify-center border border-white/30 transition-all duration-300 ease-in-out transform cursor-pointer ${
               visibleItems.has(index.toString())
                 ? 'opacity-100 translate-x-0'
                 : index % 2 === 0
