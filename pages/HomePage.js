@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden bg-gray-200 px-4">
-      <div className="relative z-10 text-center w-full">
+      <div className="relative z-10 text-center w-full max-w-screen-lg mx-auto">
         {/* Full-width main title */}
         <h1 className="text-black mb-2 text-4xl sm:text-6xl font-bold w-full">
           Welcome to
