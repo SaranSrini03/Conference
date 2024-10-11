@@ -1,5 +1,9 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import HOD from "../public/images/HOD.jpeg"; 
+import staff1 from "../public/images/Mahesh.jpeg";
+import staff2 from "../public/images/Suguna.jpeg";
 
 const Team = () => {
   const [hoveredFacultyIndex, setHoveredFacultyIndex] = useState(null);
@@ -9,12 +13,12 @@ const Team = () => {
   const teamRef = useRef(null);
 
   const facultyDetails = [
-    "Details about Coordinator 1",
+    { name: "Dr. Smitha", image: HOD },
   ];
 
   const studentDetails = [
-    "Details about Student Coordinator 1",
-    "Details about Student Coordinator 2",
+    { name: "Mr. Mahesh", image: staff1 },
+    { name: "Mrs. Suguna", image: staff2 },
   ];
 
   useEffect(() => {
@@ -47,23 +51,31 @@ const Team = () => {
       className={`flex flex-col items-center justify-center min-h-screen text-center transition-opacity duration-300`}
       style={{ opacity }}
     >
-      <h1 className="m-6 text-3xl font-bold text-blue-600">Head Of The Department - CSE</h1>
+      <h1 className="m-10 text-3xl font-bold text-blue-600">Head Of The Department - CSE</h1>
       <div className="flex flex-wrap justify-center space-x-4 md:space-x-8">
-        {facultyDetails.map((detail, index) => (
+        {facultyDetails.map((faculty, index) => (
           <div
             key={index}
-            className={`relative w-40 h-40 md:w-56 md:h-56 bg-blue-300 border-2 border-black flex items-center justify-center transition-transform duration-300 ease-in-out ${
+            className={`relative w-40 h-40 md:w-56 md:h-72 bg-white border-2 border-black flex items-center justify-center transition-transform duration-300 ease-in-out ${
               hoveredFacultyIndex === index ? 'scale-105' : 'scale-100'
             }`}
             onMouseEnter={() => setHoveredFacultyIndex(index)}
             onMouseLeave={() => setHoveredFacultyIndex(null)}
             onClick={() => handleMobileClick(index)} // Handle click for mobile
           >
+            {/* Image for HOD */}
+            <Image
+              src={faculty.image}
+              alt={faculty.name}
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0"
+            />
             {/* Overlay for better text visibility */}
             {(hoveredFacultyIndex === index || mobileTextVisible === index) && (
               <div className="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
                 <div className="text-center text-white">
-                  {detail}
+                  {faculty.name}
                 </div>
               </div>
             )}
@@ -75,23 +87,31 @@ const Team = () => {
       <div className="mt-12" />
 
       {/* Student Coordinators Section */}
-      <h1 className="m-6 mt-10 text-3xl font-bold text-blue-600">Student Coordinators</h1>
+      <h1 className="m-6 mt-10 text-3xl font-bold text-blue-600">Faculty Coordinators</h1>
       <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-        {studentDetails.map((detail, index) => (
+        {studentDetails.map((student, index) => (
           <div
             key={index}
-            className={`relative w-40 h-40 md:w-56 md:h-56 bg-blue-300 border-2 border-black flex items-center justify-center transition-transform duration-300 ease-in-out ${
+            className={`relative w-40 h-40 md:w-56 md:h-72 m-10 bg-blue-300 border-2 border-black flex items-center justify-center transition-transform duration-300 ease-in-out ${
               hoveredStudentIndex === index ? 'scale-105' : 'scale-100'
             }`}
             onMouseEnter={() => setHoveredStudentIndex(index)}
             onMouseLeave={() => setHoveredStudentIndex(null)}
             onClick={() => handleMobileClick(index + facultyDetails.length)} // Handle click for mobile
           >
+            {/* Image for Students */}
+            <Image
+              src={student.image}
+              alt={student.name}
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0"
+            />
             {/* Overlay for better text visibility */}
             {(hoveredStudentIndex === index || mobileTextVisible === index + facultyDetails.length) && (
               <div className="absolute inset-0 bg-black opacity-50 flex items-center justify-center">
                 <div className="text-center text-white">
-                  {detail}
+                  {student.name}
                 </div>
               </div>
             )}
