@@ -6,12 +6,12 @@ import "tailwindcss/tailwind.css";
 
 const About = () => { 
   return (
-    <div className="bg-black overflow-hidden">
+    <div className="bg-white overflow-hidden">
       <section id="about">
       {/* <Nav /> */}
-      <div className="flex flex-col justify-center items-center min-h-screen bg-black text-blue-600 p-3">
+      <div className="flex flex-col justify-center items-center min-h-screen bg-white text-blue-600 p-3">
         <h1 className="text-3xl sm:text-4xl md:text-5xl mb-4 font-mono font-bold text-center">
-          <span className="text-white">About</span> ICRCCT.
+          <span className="text-black">About</span> ICRCCT.
         </h1>
 
         <style jsx>{`
