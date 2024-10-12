@@ -1,6 +1,5 @@
 // pages/Mediator.js
 
-import Register from '@/components/Register'; // Assuming you'll use this component later
 import React from 'react';
 import ConfirmationComponent from '@/components/ConfirmationComponent';
 import Nav from './Nav';
