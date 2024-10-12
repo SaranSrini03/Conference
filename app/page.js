@@ -4,6 +4,7 @@ import React from 'react';
 import About from '@/pages/about';
 import Timeline from '@/pages/timeline';
 import Team from '@/pages/team';
+import Footer from '@/pages/footer';
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       <About />
       <Timeline />
       <Team />
+      <Footer />
     </div>
   );
 };
