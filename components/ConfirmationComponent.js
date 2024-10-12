@@ -17,7 +17,7 @@ const ConfirmationComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center p-6 sm:p-8 bg-white shadow-lg rounded-lg max-w-md mx-auto">
       <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800 text-center">
-        Did you submit your paper and receive an acceptance mail?
+        Did you submit your paper and received an acceptance mail?
       </h2>
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
         <button

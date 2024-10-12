@@ -32,20 +32,23 @@ const Nav = () => {
     <nav className="bg-white/30 backdrop-blur-md font-mono p-4 fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="container flex justify-between items-center">
         <div className="flex items-center space-x-0">
-          <Image
-            src={CseLogo}
-            alt="Logo"
-            width={50}
-            height={60}
-            className="mr-3 bg-gray-200 p-1"
-          />
-          <Image
-            src={CollegeLogo}
-            alt="Logo"
-            width={130}
-            height={130}
-            className={`ml-20 transition-all duration-300 ease-in-out ${isAnimating ? 'translate-x-[-100px] opacity-0' : 'translate-x-0 opacity-100'}`}
-          />
+          <Link href="/" className="cursor-pointer">
+            <Image
+              src={CseLogo}
+              alt="CSE Logo"
+              width={50}
+              height={60}
+              className="mr-3 bg-gray-200 p-1"
+            />
+          </Link>
+          <Link href="/" className={`ml-20 transition-all duration-300 ease-in-out ${isAnimating ? 'translate-x-[-100px] opacity-0' : 'translate-x-0 opacity-100'}`}>
+            <Image
+              src={CollegeLogo}
+              alt="College Logo"
+              width={130}
+              height={130}
+            />
+          </Link>
         </div>
 
         <button
