@@ -1,7 +1,9 @@
 "use client";
-
+//links to use future : https://forms.gle/Q8hGhw5RkGpwwj949 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import "tailwindcss/tailwind.css";
+
 import Nav from "./Nav";
 
 const HomePage = () => {
@@ -9,7 +11,7 @@ const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const fromSubmit = () => {
-    window.location.href = "https://forms.gle/Q8hGhw5RkGpwwj949";
+    router.push("/choice");
   };
 
   useEffect(() => {
@@ -54,7 +56,7 @@ const HomePage = () => {
               className="w-full sm:w-auto px-8 py-3 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white hover:scale-110 transition-all duration-500"
               onClick={fromSubmit}
             >
-              Submit Paper
+              Submit 
             </button>
             <button
               className="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-full hover:border hover:border-blue-600 hover:bg-transparent hover:text-blue-600 hover:scale-110 transition-all duration-500"
