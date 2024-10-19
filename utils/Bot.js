@@ -14,34 +14,38 @@ function findAnswer(question) {
       </div>
     );
   } else if (cleanedQuestion.includes("help")) {
-    return [
-      "objective",
-      "organizers",
-      "where held",
-      "registration process",
-      "submission guidelines",
-      "acceptable topics",
-      "last date for paper submission",
-      "plagiarism check",
-      "how to submit paper",
-      "who can submit",
-      "student coordinators",
-      "pitchathon",
-      "prototype for pitchathon",
-      "is pitchathon related to papers",
-      "acceptance notification",
-      "registration deadline",
-      "final date for submitting a soft copy",
-      "contact organizers",
-      "soft copy of the paper",
-      "conference name",
-      "occurrence",
-      "dates",
-      "event activities",
-      "paper topics",
-      "organizing committee",
-      "important links",
-    ].join(", ");
+    return (
+      <div>
+        <ol>
+          <li>Objective</li>
+          <li>Organizers</li>
+          <li>Where Held</li>
+          <li>Registration Process</li>
+          <li>Submission Guidelines</li>
+          <li>Acceptable Topics</li>
+          <li>Last Date for Paper Submission</li>
+          <li>Plagiarism Check</li>
+          <li>How to Submit Paper</li>
+          <li>Who Can Submit</li>
+          <li>Student Coordinators</li>
+          <li>Pitchathon</li>
+          <li>Prototype for Pitchathon</li>
+          <li>Is Pitchathon Related to Papers</li>
+          <li>Acceptance Notification</li>
+          <li>Registration Deadline</li>
+          <li>Final Date for Submitting a Soft Copy</li>
+          <li>Contact Organizers</li>
+          <li>Soft Copy of the Paper</li>
+          <li>Conference Name</li>
+          <li>Occurrence</li>
+          <li>Dates</li>
+          <li>Event Activities</li>
+          <li>Paper Topics</li>
+          <li>Organizing Committee</li>
+          <li>Important Links</li>
+        </ol>
+      </div>
+    );
   } else if (cleanedQuestion.includes("organizers")) {
     return "The main organizers are the Department of Computer Science and Engineering at Sri Sairam College of Engineering.";
   } else if (
@@ -103,7 +107,27 @@ function findAnswer(question) {
   } else if (cleanedQuestion.includes("organizing committee")) {
     return "The organizing committee includes Dr. Smitha JA as the General Chair and Dr. Mahesh C as the Conference Chair, along with student coordinators Kamalakannan and Naveen Rajan M.";
   } else if (cleanedQuestion.includes("important links")) {
-    return "Important links include the submission guidelines sairamicrcct.vercel.app/choice, registration form, and contact info. Please check the conference website for more details.sairamicrcct.vercel.app";
+    return (
+      <div>
+        <p>
+          Important links include the submissions
+          <a
+            href="sairamicrcct.vercel.app/choice"
+            className="ml-3 text-black underline"
+          >
+            Sri sairam
+          </a>
+          , registration form, and contact info. Please check the conference
+          website for more details.
+          <a
+            href="sairamicrcct.vercel.app"
+            className="ml-3 text-black underline"
+          >
+            website
+          </a>
+        </p>
+      </div>
+    );
   }
 
   return "please contact our student coordinator mr.kamala kannan for more detials";
