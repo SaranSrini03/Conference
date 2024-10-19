@@ -4,7 +4,44 @@ function findAnswer(question) {
   const cleanedQuestion = question.toLowerCase();
 
   if (cleanedQuestion.includes("objective")) {
-    return "The objective of the conference is to bring together researchers and practitioners from academia and industry to discuss recent trends and developments in computing and communication technologies.";
+    return (
+      <div>
+        <p className="bg-white">
+          "The objective of the conference is to bring together researchers and
+          practitioners from academia and industry to discuss recent trends and
+          developments in computing and communication technologies."
+        </p>
+      </div>
+    );
+  } else if (cleanedQuestion.includes("help")) {
+    return [
+      "objective",
+      "organizers",
+      "where held",
+      "registration process",
+      "submission guidelines",
+      "acceptable topics",
+      "last date for paper submission",
+      "plagiarism check",
+      "how to submit paper",
+      "who can submit",
+      "student coordinators",
+      "pitchathon",
+      "prototype for pitchathon",
+      "is pitchathon related to papers",
+      "acceptance notification",
+      "registration deadline",
+      "final date for submitting a soft copy",
+      "contact organizers",
+      "soft copy of the paper",
+      "conference name",
+      "occurrence",
+      "dates",
+      "event activities",
+      "paper topics",
+      "organizing committee",
+      "important links",
+    ].join(", ");
   } else if (cleanedQuestion.includes("organizers")) {
     return "The main organizers are the Department of Computer Science and Engineering at Sri Sairam College of Engineering.";
   } else if (
@@ -66,10 +103,10 @@ function findAnswer(question) {
   } else if (cleanedQuestion.includes("organizing committee")) {
     return "The organizing committee includes Dr. Smitha JA as the General Chair and Dr. Mahesh C as the Conference Chair, along with student coordinators Kamalakannan and Naveen Rajan M.";
   } else if (cleanedQuestion.includes("important links")) {
-    return "Important links include the submission guidelines, registration form, and contact info. Please check the conference website for more details.";
+    return "Important links include the submission guidelines sairamicrcct.vercel.app/choice, registration form, and contact info. Please check the conference website for more details.sairamicrcct.vercel.app";
   }
 
-  return "please contact 6382817065";
+  return "please contact our student coordinator mr.kamala kannan for more detials";
 }
 
 module.exports = {
