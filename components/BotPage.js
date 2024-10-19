@@ -19,26 +19,26 @@ const BotPage = () => {
 
   return (
     <div className="relative h-screen w-screen">
-      {/* Background 3D Object */}
       <iframe
         src="https://my.spline.design/liquidspiral-17469e59cff3eb0e9a8344531b861aa3/"
         className="absolute inset-0 w-full h-full"
         style={{ border: "none" }}
       />
 
-      {/* Messages Container */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-screen max-w-xl p-4 bg-black bg-opacity-70 rounded-lg shadow-lg">
-        <div className="flex flex-col space-y-2 overflow-y-auto h-3/5">
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-5/6 m-10 h-2/3 bg-transparent p-4 rounded-lg shadow-lg">
+        <div className="flex flex-col space-y-2 overflow-y-auto p-10 scrollbar-hide h-full">
           {messages.map((msg, index) => (
             <div
               key={index}
-              className={`w-full flex ${msg.type === "user" ? "justify-end" : "justify-start"}`}
+              className={`w-full flex ${
+                msg.type === "user" ? "justify-end" : "justify-start"
+              }`}
             >
               <div
                 className={`max-w-xs p-2 rounded-md ${
                   msg.type === "user"
                     ? "bg-green-500 text-white text-right" // User message color
-                    : "bg-blue-600 text-white text-left"  // Bot message color
+                    : "bg-blue-600 text-white text-left" // Bot message color
                 }`}
               >
                 {msg.text}
