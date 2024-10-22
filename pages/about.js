@@ -67,7 +67,7 @@ const About = () => {
               </h2>
             </div>
 
-            <div className="mt-8 sm:mt-10 text-left leading-relaxed">
+            <div className="mt-8 sm:mt-10 text-left text-justify leading-relaxed">
               The Pitchathon provides a dynamic platform for participants to
               refine their business strategies, enhance their presentation
               skills, and gain valuable feedback from seasoned investors. Beyond
