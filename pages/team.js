@@ -141,8 +141,8 @@ const Team = () => {
               <div className="w-full h-full bg-gray-200 rounded-lg"></div>
             </div>
             <div className="mt-4 text-center">
-              <div className="text-black font-bold">Student Name</div>
-              <div className="text-gray-600 mb-20">Final Year</div>
+              <div className="text-black font-bold">Naveen Rajan M</div>
+              <div className="text-gray-600 mb-20">Third Year</div>
             </div>
           </div>
         </div>
