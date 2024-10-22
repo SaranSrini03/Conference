@@ -14,7 +14,7 @@ const About = () => {
       <section id="about">
         <div className="flex flex-col lg:flex-row justify-center items-center min-h-screen bg-white text-blue-600 p-4 md:p-6 lg:p-8 space-y-8 lg:space-y-0 lg:space-x-8">
           {/* First Container (Paper Presentation) */}
-          <div className="relative flex flex-col items-start text-justify text-sm sm:text-base md:text-lg lg:text-xl w-full lg:flex-1 min-h-[400px] p-6 rounded-lg text-white font-mono bg-black border border-white shadow-lg">
+          <div className="relative flex flex-col items-start text-sm sm:text-base md:text-lg lg:text-xl w-full lg:flex-1 min-h-[400px] p-6 rounded-lg text-white font-mono bg-black border border-white shadow-lg">
             <div className="flex items-center space-x-4">
               {/* Flex container for logo and title */}
               <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 transition-transform transform hover:scale-105">
