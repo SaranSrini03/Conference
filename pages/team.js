@@ -59,7 +59,9 @@ const Team = () => {
           <div className="text-black font-bold">Dr. Smitha</div>
           <div className="text-gray-600">HOD of CSE Dept</div>
         </div>
+
         <div className="mt-12" />
+
         <h1 className="m-6 mt-10 text-3xl font-bold text-blue-600">
           Faculty Coordinators
         </h1>
@@ -82,6 +84,7 @@ const Team = () => {
               <div className="text-gray-600">Faculty Coordinator</div>
             </div>
           </div>
+
           <div className="flex flex-col items-center">
             <div
               className="relative w-40 h-40 md:w-56 md:h-72 bg-blue-300 border-2 border-black flex items-center justify-center rounded-lg transition-transform duration-300 ease-in-out"
@@ -101,12 +104,14 @@ const Team = () => {
             </div>
           </div>
         </div>
+
         <div className="mt-12" />
+
         <h1 className="m-6 mt-10 text-3xl font-bold text-blue-600">
           Student Coordinators
         </h1>
         <div className="flex flex-wrap justify-center gap-8">
-          {/* Add your student coordinator images here */}
+          {/* First student coordinator */}
           <div className="flex flex-col items-center">
             <div
               className="relative w-40 h-40 md:w-56 md:h-72 bg-blue-300 border-2 border-black flex items-center justify-center rounded-lg transition-transform duration-300 ease-in-out"
@@ -114,7 +119,7 @@ const Team = () => {
             >
               <Image
                 src={Kamal}
-                alt="Student Coordinator"
+                alt="Kamalakannan"
                 layout="fill"
                 objectFit="cover"
                 className="absolute inset-0 rounded-lg"
@@ -122,7 +127,22 @@ const Team = () => {
             </div>
             <div className="mt-4 text-center">
               <div className="text-black font-bold">Kamalakannan</div>
-              <div className="text-gray-600 mb-20">final year</div>
+              <div className="text-gray-600 mb-20">Final Year</div>
+            </div>
+          </div>
+
+          {/* Second student coordinator (no image, just a square) */}
+          <div className="flex flex-col items-center">
+            <div
+              className="relative w-40 h-40 md:w-56 md:h-72 bg-blue-300 border-2 border-black flex items-center justify-center rounded-lg transition-transform duration-300 ease-in-out"
+              onClick={() => handleMobileClick(4)}
+            >
+              {/* Empty square for the second student coordinator */}
+              <div className="w-full h-full bg-gray-200 rounded-lg"></div>
+            </div>
+            <div className="mt-4 text-center">
+              <div className="text-black font-bold">Student Name</div>
+              <div className="text-gray-600 mb-20">Final Year</div>
             </div>
           </div>
         </div>
