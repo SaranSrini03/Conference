@@ -31,7 +31,7 @@ const About = () => {
               </h2>
             </div>
 
-            <div className="mt-8 sm:mt-10 text-left leading-relaxed">
+            <div className="mt-8 sm:mt-10 text-left text-justify leading-relaxed">
               Welcome to the International Paper Presentation Conference, a
               premier event dedicated to advancing research and collaboration in
               the field of computer science. This conference aims to bring
