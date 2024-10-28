@@ -5,6 +5,7 @@ import HOD from "../public/images/HOD.jpeg";
 import staff1 from "../public/images/Mahesh.jpeg";
 import staff2 from "../public/images/Suguna.jpeg";
 import Kamal from "@/public/images/Kamal.jpg";
+import Naveen from "../me.jpg";
 
 const Team = () => {
   const [opacity, setOpacity] = useState(0);
@@ -137,6 +138,13 @@ const Team = () => {
               className="relative w-40 h-40 md:w-56 md:h-72 bg-blue-300 border-2 border-black flex items-center justify-center rounded-lg transition-transform duration-300 ease-in-out"
               onClick={() => handleMobileClick(4)}
             >
+                <Image
+                src={Naveen}
+                alt="Naveenrajanm"
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0 rounded-lg"
+              />
               {/* Empty square for the second student coordinator */}
               <div className="w-full h-full bg-gray-200 rounded-lg"></div>
             </div>
