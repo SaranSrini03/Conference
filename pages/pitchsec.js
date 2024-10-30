@@ -8,9 +8,9 @@ const PitchathonSection = () => {
   };
 
   return (
-    <div className="text-center px-4 py-6 sm:py-8 md:py-12">
+    <div className="text-center bg-white px-4 py-6 sm:py-8 md:py-12">
       <h1
-        className="text-2xl sm:text-3xl md:text-5xl font-bold text-green-600 mb-3 leading-snug"
+        className="text-2xl sm:text-3xl bg-white md:text-5xl font-bold px-10 text-green-600 mb-3 leading-snug"
         style={{ letterSpacing: "-1.5px" }}
       >
         Want to participate in Pitchathon?
