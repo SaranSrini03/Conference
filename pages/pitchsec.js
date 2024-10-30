@@ -8,19 +8,20 @@ const PitchathonSection = () => {
   };
 
   return (
-    <div className="text-center">
+    <div className="text-center px-4 py-6 sm:py-8 md:py-12">
       <h1
-        className="text-xl sm:text-2xl md:text-5xl font-bold text-green-600 mb-1 leading-tight"
+        className="text-2xl sm:text-3xl md:text-5xl font-bold text-green-600 mb-3 leading-snug"
         style={{ letterSpacing: "-1.5px" }}
       >
         Want to participate in Pitchathon?
       </h1>
-      <p className="text-sm sm:text-lg text-gray-800 mb-2 leading-tight">
+
+      <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-6 leading-relaxed">
         A platform where you can turn your business ideas into something valuable.
       </p>
 
       <button
-        className="w-full sm:w-auto px-8 py-3 bg-green-600 text-white rounded-full hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 hover:scale-110 transition-all duration-500"
+        className="w-full sm:w-auto px-6 py-3 bg-green-600 text-white rounded-full hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 hover:scale-105 transition-all duration-500"
         onClick={submitIdeas}
       >
         Submit Ideas
