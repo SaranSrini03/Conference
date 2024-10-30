@@ -29,7 +29,7 @@ const HomePage = () => {
   return (
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden bg-gray-200  px-10">
       <Nav />
-      <section id="homepage" className="flex-grow flex items-center py-20 mt-36">
+      <section id="homepage" className="flex-grow flex items-center">
         <div
           className={`relative z-10 text-center w-full max-w-screen-lg mx-auto transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"
             }`}
@@ -70,7 +70,7 @@ const HomePage = () => {
           </div>
 
           {/* Pitchathon Section */}
-          <div className="mt-8 text-center">
+          {/* <div className="mt-8 text-center">
             <h1
               className="text-xl sm:text-2xl md:text-5xl font-bold text-green-600 mb-1  leading-tight"
               style={{ letterSpacing: "-1.5px" }}
@@ -87,7 +87,7 @@ const HomePage = () => {
             >
               Submit Ideas
             </button>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
