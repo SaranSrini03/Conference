@@ -29,11 +29,10 @@ const HomePage = () => {
   return (
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden bg-gray-200  px-10">
       <Nav />
-      <section id="homepage" className="flex-grow flex items-center mt-36">
+      <section id="homepage" className="flex-grow flex items-center py-20 mt-36">
         <div
-          className={`relative z-10 text-center w-full max-w-screen-lg mx-auto transition-opacity duration-700 ${
-            isVisible ? "opacity-100" : "opacity-0"
-          }`}
+          className={`relative z-10 text-center w-full max-w-screen-lg mx-auto transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"
+            }`}
         >
           {/* Full-width main title */}
           <h1 className="text-black mb-2 text-4xl sm:text-6xl font-bold w-full">
@@ -73,14 +72,15 @@ const HomePage = () => {
           {/* Pitchathon Section */}
           <div className="mt-8 text-center">
             <h1
-              className="text-xl sm:text-2xl md:text-5xl font-bold text-green-600 mb-4  leading-tight"
+              className="text-xl sm:text-2xl md:text-5xl font-bold text-green-600 mb-1  leading-tight"
               style={{ letterSpacing: "-1.5px" }}
             >
               Want to participate in Pitchathon?
             </h1>
-            <p className="text-base sm:text-lg text-gray-800 mb-4">
+            <p className="text-sm sm:text-lg text-gray-800 mb-2 leading-tight">
               A platform where you can turn your business ideas into something valuable.
             </p>
+
             <button
               className="w-full sm:w-auto px-8 py-3 bg-green-600 text-white rounded-full hover:bg-transparent hover:text-green-600 hover:border hover:border-green-600 hover:scale-110 transition-all duration-500"
               onClick={submitIdeas}
