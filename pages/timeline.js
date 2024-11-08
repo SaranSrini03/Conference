@@ -5,9 +5,11 @@ import "tailwindcss/tailwind.css";
 // import Nav from './Nav';
 import ScrollGif from '/public/images/scroll-down.gif';
 
-// Timeline data with event titles and descriptions
 const timelineData = [
-  { title: "Paper Submission Last Date", description: "29.10.2024" },
+  {
+    title: "Paper Submission Last Date",
+    description: "submission date has ended.",
+  },
   { title: "Acceptance Notification Date", description: "04.11.2024" },
   { title: "Registration Last Date", description: "09.11.2024" },
   { title: "Event Day", description: "14.11.2024 & 15.11.2024" },

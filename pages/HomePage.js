@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import "tailwindcss/tailwind.css";
 
 import Nav from "./Nav";
+import End from "@/components/End";
 
 const HomePage = () => {
   const router = useRouter();
@@ -30,6 +31,7 @@ const HomePage = () => {
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden bg-gray-200  px-10">
       <Nav />
       <section id="homepage" className="flex-grow flex items-center">
+        <End/>
         <div
           className={`relative z-10 text-center w-full max-w-screen-lg mx-auto transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"
             }`}

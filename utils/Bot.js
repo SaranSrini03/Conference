@@ -6,7 +6,7 @@ function findAnswer(question) {
   if (cleanedQuestion.includes("objective")) {
     return (
       <div>
-        <p className="bg-white">
+        <p>
           "The objective of the conference is to bring together researchers and
           practitioners from academia and industry to discuss recent trends and
           developments in computing and communication technologies."
