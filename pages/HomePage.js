@@ -57,15 +57,15 @@ const HomePage = () => {
           <div className="buttondiv flex flex-col sm:flex-row justify-center gap-4 mt-10">
             <button
               className="w-full sm:w-auto px-8 py-3 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white hover:scale-110 transition-all duration-500"
-              onClick={fromSubmit}
+              
             >
-              Submit Paper
+              Time up
             </button>
             <button
               className="disabled={true} w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-full hover:border hover:border-blue-600 hover:bg-transparent hover:text-blue-600 hover:scale-110 transition-all duration-500"
-              onClick={() => router.push("/Mediator")}
+             
             >
-              Register
+              Time Up
             </button>
           </div>
 
