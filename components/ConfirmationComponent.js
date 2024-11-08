@@ -10,7 +10,7 @@ const ConfirmationComponent = () => {
     if (response === 'yes') {
       window.location.href = "https://forms.gle/ohEG2zF6mvJnoUyDA";
     } else {
-      window.location.href = "sairamicrcct.vercel.app";
+      window.location.href = "/";
     }
   };
 
