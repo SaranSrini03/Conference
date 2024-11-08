@@ -62,7 +62,7 @@ const HomePage = () => {
               Submit Paper
             </button>
             <button
-              className="w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-full hover:border hover:border-blue-600 hover:bg-transparent hover:text-blue-600 hover:scale-110 transition-all duration-500"
+              className="disabled w-full sm:w-auto px-8 py-3 bg-blue-600 text-white rounded-full hover:border hover:border-blue-600 hover:bg-transparent hover:text-blue-600 hover:scale-110 transition-all duration-500"
               onClick={() => router.push("/Mediator")}
             >
               Register
